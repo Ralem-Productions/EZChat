@@ -11,7 +11,6 @@ import android.view.View;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
-//
 
 public class MainActivity extends Activity {
 
@@ -86,7 +85,7 @@ public class MainActivity extends Activity {
         ClickButton("#");
     }
     public void ButtonStar(View view) {
-        ClickButton("1");
+        ClickButton("*");
     }
     public void ButtonDelete(View view){
         BackSpace();
