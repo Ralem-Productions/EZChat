@@ -191,7 +191,7 @@
             android:background="@drawable/call"
             android:layout_height="fill_parent"
             android:layout_weight="1.5"
-            android:onClick="ButtonHam"
+            android:onClick="ButtonCall"
             android:text="ham"
             android:id="@+id/call"
 
