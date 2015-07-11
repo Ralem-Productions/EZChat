@@ -11,7 +11,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
 
 public class MainActivity extends Activity {
 
@@ -54,6 +53,7 @@ public class MainActivity extends Activity {
 
     public void Button1(View view) {
         ClickButton("1");
+
         MediaPlayer player = MediaPlayer.create(this, R.raw.one);
         player.start();
 
@@ -124,9 +124,6 @@ public class MainActivity extends Activity {
     }
     public void ButtonDelete(View view){
         BackSpace();
-
-        MediaPlayer player = MediaPlayer.create(this, R.raw.deleted);
-        player.start();
     }
     public void ButtonCall(View view){
         Call();
