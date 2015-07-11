@@ -192,7 +192,7 @@
             android:layout_height="fill_parent"
             android:layout_weight="1.5"
             android:onClick="ButtonCall"
-            android:text="ham"
+            android:text=""
             android:id="@+id/call"
 
            />
