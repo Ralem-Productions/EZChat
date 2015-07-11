@@ -18,6 +18,7 @@
             android:layout_height="fill_parent"
             android:layout_weight="1"
             android:text="1"
+            android:onClick="Button1"
 
             android:textColor="#ffff00"
             android:textSize="100sp"
@@ -30,7 +31,10 @@
             android:layout_width="0dp"
             android:layout_height="fill_parent"
             android:layout_weight="1"
-
+            android:textColor="#ffff00"
+            android:textSize="100sp"
+            android:text="2"
+            android:onClick="Button2"
             android:background="@drawable/b1"
             android:id="@+id/b2" />
 
@@ -40,6 +44,10 @@
             android:layout_weight="1"
             android:id="@+id/b3"
             android:background="@drawable/b1"
+            android:textColor="#ffff00"
+            android:textSize="100sp"
+            android:onClick="Button3"
+            android:text="3"
              />
     </LinearLayout>
 
@@ -56,6 +64,10 @@
             android:layout_weight="1"
             android:id="@+id/b4"
             android:background="@drawable/b1"
+            android:textColor="#ffff00"
+            android:textSize="100sp"
+            android:onClick="Button4"
+            android:text="4"
             />
 
         <Button
@@ -64,6 +76,10 @@
             android:layout_weight="1"
             android:id="@+id/b5"
             android:background="@drawable/b1"
+            android:textColor="#ffff00"
+            android:textSize="100sp"
+            android:onClick="Button5"
+            android:text="5"
             />
 
         <Button
@@ -72,6 +88,10 @@
             android:layout_weight="1"
             android:id="@+id/b6"
             android:background="@drawable/b1"
+            android:textColor="#ffff00"
+            android:textSize="100sp"
+            android:onClick="Button6"
+            android:text="6"
             />
     </LinearLayout>
 
@@ -89,6 +109,10 @@
             android:layout_weight="1"
             android:id="@+id/b7"
             android:background="@drawable/b1"
+            android:textColor="#ffff00"
+            android:textSize="100sp"
+            android:onClick="Button7"
+            android:text="7"
             />
 
         <Button
@@ -97,6 +121,10 @@
             android:layout_weight="1"
             android:id="@+id/b8"
             android:background="@drawable/b1"
+            android:textColor="#ffff00"
+            android:textSize="100sp"
+            android:onClick="Button8"
+            android:text="8"
             />
 
         <Button
@@ -105,7 +133,11 @@
             android:layout_weight="1"
             android:id="@+id/b9"
             android:background="@drawable/b1"
-            android:text="9" />
+            android:text="9"
+            android:onClick="Button9"
+            android:textColor="#ffff00"
+            android:textSize="100sp"
+            />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -120,7 +152,10 @@
             android:layout_height="fill_parent"
             android:layout_weight="1"
             android:id="@+id/bstar"
+            android:onClick="ButtonStar"
             android:background="@drawable/b1"
+            android:textColor="#ffff00"
+            android:textSize="100sp"
             android:text="*" />
 
         <Button
@@ -129,6 +164,9 @@
             android:layout_weight="1"
             android:background="@drawable/b1"
             android:id="@+id/b0"
+            android:onClick="Button0"
+            android:textColor="#ffff00"
+            android:textSize="100sp"
             android:text="0" />
 
         <Button
@@ -137,6 +175,9 @@
             android:layout_weight="1"
             android:id="@+id/bpound"
             android:background="@drawable/b1"
+            android:textColor="#ffff00"
+            android:onClick="ButtonPound"
+            android:textSize="100sp"
             android:text="#" />
     </LinearLayout>
     <LinearLayout
@@ -150,7 +191,8 @@
             android:background="@drawable/call"
             android:layout_height="fill_parent"
             android:layout_weight="1.5"
-            android:text="ham"
+            android:onClick="ButtonCall"
+            android:text=""
             android:id="@+id/call"
 
            />
@@ -158,6 +200,7 @@
             android:layout_height="fill_parent"
             android:layout_weight=".5"
             android:id="@+id/bDelete"
+            android:onClick="ButtonDelete"
             android:background="@drawable/delete"
             />
 </LinearLayout>
