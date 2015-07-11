@@ -192,7 +192,8 @@
             android:layout_height="fill_parent"
             android:layout_weight="1.5"
             android:onClick="ButtonCall"
-            android:text=""
+            android:textSize="40sp"
+            android:text="8009999999"
             android:id="@+id/call"
 
            />
