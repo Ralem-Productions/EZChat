@@ -85,7 +85,7 @@ public class MainActivity extends Activity {
         ClickButton("#");
     }
     public void ButtonStar(View view) {
-        ClickButton("1");
+        ClickButton("*");
     }
     public void ButtonDelete(View view){
         BackSpace();
