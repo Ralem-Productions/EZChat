@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 public class MainActivity extends Activity {
 
-    private String currentNumber= "";
+    private String currentNumber = "";
     private TextView callText;
 
     @Override
@@ -22,7 +22,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        callText = (TextView)findViewById(R.id.call);
+        callText = (TextView) findViewById(R.id.call);
         UpdateCallText();
     }
 
@@ -31,14 +31,23 @@ public class MainActivity extends Activity {
         UpdateCallText();
     }
 
-    public void BackSpace(){
-        if(currentNumber.length() <= 0){return;}
+    public void BackSpace() {
+        if (currentNumber.length() <= 0) {
+            return;
+        }
         currentNumber = currentNumber.substring(0, currentNumber.length() - 1);
         UpdateCallText();
     }
-    public void UpdateCallText(){
-        callText.setText("CALL: " + currentNumber);
+
+    public void UpdateCallText() {
+
+        if (currentNumber.length() <= 5)
+            callText.setText("CALL: " + currentNumber);
+        if(currentNumber.length()<=5)
+            callText.setText(currentNumber);
     }
+
+
 
     public void Call(){
         try{
