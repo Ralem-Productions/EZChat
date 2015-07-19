@@ -1,10 +1,13 @@
 package com.example.ralemproductions.ezchat;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 
 public class MainActivity extends Activity {
@@ -29,6 +32,7 @@ public class MainActivity extends Activity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
+
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
@@ -36,4 +40,18 @@ public class MainActivity extends Activity {
 
         return super.onOptionsItemSelected(item);
     }
+    public void buttonOnClick(View v){
+
+        Button button =(Button) v;
+        startActivity(new Intent(getApplicationContext(), caller.class));
+    }
+
+
+    public void buttontextOnClick(View v){
+
+        Button button =(Button) v;
+        startActivity(new Intent(getApplicationContext(), contacts.class));
+    }
+
+
 }

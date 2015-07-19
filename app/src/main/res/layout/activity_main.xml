@@ -7,7 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1.2">
-        //button
+
         <Button
 
             android:layout_width="0dp"
@@ -15,7 +15,7 @@
             android:layout_height="fill_parent"
             android:layout_weight="1"
             android:text="EZCALL"
-            android:onClick="bCall"
+            android:onClick="buttonOnClick"
 
             android:textColor="#aaffaa"
             android:textSize="100sp"
@@ -34,7 +34,7 @@
             android:layout_height="fill_parent"
             android:layout_weight="1"
             android:text="EZTEXT"
-            android:onClick="bTEXT"
+            android:onClick="buttontextOnClick"
 
             android:textColor="#ffaaaa"
             android:textSize="100sp"
