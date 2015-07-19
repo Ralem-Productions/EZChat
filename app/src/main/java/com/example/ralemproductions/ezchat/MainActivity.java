@@ -53,5 +53,12 @@ public class MainActivity extends Activity {
         startActivity(new Intent(getApplicationContext(), contacts.class));
     }
 
+    public void buttonShareOnClick(View v){
+        Button button = (Button) v;
+
+
+
+    }
+
 
 }
