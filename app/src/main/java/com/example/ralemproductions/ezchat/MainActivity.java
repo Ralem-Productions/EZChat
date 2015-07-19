@@ -40,10 +40,6 @@ public class MainActivity extends Activity {
     }
 
     public void UpdateCallText() {
-
-        if (currentNumber.length() <= 5)
-            callText.setText("CALL: " + currentNumber);
-        if(currentNumber.length()<=5)
             callText.setText(currentNumber);
     }
 
