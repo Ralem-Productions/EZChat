@@ -1,12 +1,13 @@
 package com.example.ralemproductions.ezchat;
 
+import android.app.Activity;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
 
-public class caller extends ActionBarActivity {
+public class caller extends Activity {
 
     @Override
 
