@@ -50,7 +50,7 @@ public class MainActivity extends Activity {
     public void buttontextOnClick(View v){
 
         Button button =(Button) v;
-        startActivity(new Intent(getApplicationContext(), contacts.class));
+        startActivity(new Intent(getApplicationContext(), text.class));
     }
 
     public void buttonShareOnClick(View v){

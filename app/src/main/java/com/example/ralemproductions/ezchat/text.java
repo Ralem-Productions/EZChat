@@ -1,40 +1,72 @@
 package com.example.ralemproductions.ezchat;
 
 import android.app.Activity;
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
-
-
-
+import android.telephony.SmsManager;
+import android.view.View;
+import android.widget.Toast;
 public class text extends Activity {
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_text);
+
+
+
+
+
     }
+    public void Button1(View view){
+        sendSMSMessage("Yes");
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_text, menu);
-        return true;
+
     }
+    public void Button2(View view){
+        sendSMSMessage("No");
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+    }
+    public void Button3(View view){
+        sendSMSMessage("Call me");
+
+
+    }
+    public void Button4(View view){
+        sendSMSMessage("Thank you");
+
+
+    }
+    public void Button5(View view){
+        sendSMSMessage("Give me 15");
+
+
+    }
+    public void Button6(View view){
+        sendSMSMessage("HELP!");
+
+
+    }
+    protected void sendSMSMessage(String newMessage) {
+
+
+        String message = newMessage;
+
+        try {
+            SmsManager smsManager = SmsManager.getDefault();
+            smsManager.sendTextMessage("8608965042", null, message, null, null);
+            Toast.makeText(getApplicationContext(), "SMS sent.", Toast.LENGTH_LONG).show();
         }
 
-        return super.onOptionsItemSelected(item);
+        catch (Exception e) {
+            Toast.makeText(getApplicationContext(), "SMS faild, please try again.", Toast.LENGTH_LONG).show();
+            e.printStackTrace();
+        }
     }
+
+
+
 }
